@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>B-CHAT</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ヘッダー -->
+    <header class="header">
+
+        <div class="logo">
+            B-CHAT<a href="index.html"></a>
+        </div>
+
+        <nav class="nav">
+            <a href="index.html">ホーム</a>
+            <a href="threads.html">スレッド</a>
+            <a href="search.html">検索</a>
+            <div id="auth-link"></div>
+            <a href="profile.html">プロフィール</a>
+        </nav>
+
+    </header>
+
+    
+
+    <!-- メインコンテンツ -->
+    <main>
+
+        <!-- ヒーローエリア -->
+        <section class="hero">
+
+            <h1>ボウリングの情報を探す。</h1>
+
+            <p>
+                ボール、レーン、ボウリング場、技術など
+                ボウリングに関する情報をみんなで共有しよう。
+            </p>
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    placeholder="ボール、レーン、ボウリング場などを検索"
+                >
+
+                <button>
+                    検索
+                </button>
+
+            </div>
+
+        </section>
+
+<!-- 新着スレッド -->
+        <section class="section">
+
+            <div class="section-header">
+                <h2>新着スレッド</h2>
+                <a href="#">すべて見る →</a>
+            </div>
+
+
+            <div
+    class="thread-list"
+    id="latest-threads"
+>
+
+    <p>
+        新着スレッドを読み込んでいます...
+    </p>
+
+</div>
+
+        </section>
+
+        <!-- ジャンル -->
+        <section class="category-section">
+
+    <h2>
+        ジャンルから探す
+    </h2>
+
+
+    <div class="category-grid">
+
+        <a
+            href="threads.html?category=ボール"
+            class="category-card"
+        >
+            <h3>ボール</h3>
+            <p>ボウリングボールについて</p>
+        </a>
+
+
+        <a
+            href="threads.html?category=レーン"
+            class="category-card"
+        >
+            <h3>レーン</h3>
+            <p>レーンコンディションについて</p>
+        </a>
+
+
+        <a
+            href="threads.html?category=投球"
+            class="category-card"
+        >
+            <h3>投球</h3>
+            <p>フォーム・投球技術について</p>
+        </a>
+
+
+        <a
+            href="threads.html?category=大会"
+            class="category-card"
+        >
+            <h3>大会</h3>
+            <p>大会・トーナメントについて</p>
+        </a>
+
+
+        <a
+            href="threads.html?category=その他"
+            class="category-card"
+        >
+            <h3>その他</h3>
+            <p>その他のボウリング情報</p>
+        </a>
+
+    </div>
+
+</section>
+
+        </section>
+
+
+        
+
+    </main>
+
+
+    <!-- フッター -->
+    <footer class="footer">
+
+        <p>© 2026 B-CHAT</p>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
+```
