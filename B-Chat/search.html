@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>B-CHAT - 検索</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- ========================================
+     ヘッダー
+======================================== -->
+
+<header class="header">
+
+    <div class="logo">
+        B-CHAT<a href="index.html"></a>
+    </div>
+
+
+    <nav class="nav">
+
+        <a href="index.html">
+            ホーム
+        </a>
+
+        <a href="threads.html">
+            スレッド
+        </a>
+
+        <a href="search.html">
+            検索
+        </a>
+
+        <a href="login.html">
+            ログイン
+        </a>
+
+        <a href="profile.html">
+            プロフィール
+        </a>
+
+    </nav>
+
+</header>
+
+
+<!-- ========================================
+     メイン
+======================================== -->
+
+<main>
+
+    <section class="section">
+
+
+        <!-- タイトル -->
+
+        <div class="page-title">
+
+            <p class="breadcrumb">
+                B-CHAT / 検索
+            </p>
+
+
+            <h1>
+                スレッド検索
+            </h1>
+
+
+            <p>
+                ボウリングに関するスレッドを検索できます。
+            </p>
+
+        </div>
+
+
+        <!-- 検索 -->
+
+        <div class="global-search">
+
+            <input
+                type="text"
+                id="global-search-input"
+                placeholder="キーワードを入力"
+            >
+
+
+            <button
+                id="global-search-button"
+                type="button"
+            >
+                検索
+            </button>
+
+        </div>
+
+
+        <!-- 検索結果 -->
+
+        <div
+            id="search-result-count"
+            class="search-result-count"
+        ></div>
+
+
+        <div
+            id="search-results"
+            class="thread-list"
+        ></div>
+
+
+    </section>
+
+</main>
+
+
+<!-- ========================================
+     フッター
+======================================== -->
+
+<footer class="footer">
+
+    <p>
+        © 2026 B-CHAT
+    </p>
+
+</footer>
+
+
+<!-- ========================================
+     Supabase
+======================================== -->
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<script src="js/main.js"></script>
+
+<script src="js/search.js"></script>
+
+
+</body>
+
+</html>
+```

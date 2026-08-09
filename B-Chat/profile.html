@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>B-CHAT - プロフィール</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- ========================================
+     ヘッダー
+======================================== -->
+
+<header class="header">
+
+    <div class="logo">
+        B-CHAT<a href="index.html"></a>
+    </div>
+
+
+    <nav class="nav">
+
+        <a href="index.html">
+            ホーム
+        </a>
+
+        <a href="threads.html">
+            スレッド
+        </a>
+
+        <a href="search.html">
+            検索
+        </a>
+
+        <a href="profile.html">
+            プロフィール
+        </a>
+
+    </nav>
+
+</header>
+
+
+<!-- ========================================
+     メイン
+======================================== -->
+
+<main>
+
+    <section class="section">
+
+
+        <!-- タイトル -->
+
+        <div class="page-title">
+
+            <p class="breadcrumb">
+                B-CHAT / プロフィール
+            </p>
+
+
+            <h1>
+                プロフィール
+            </h1>
+
+        </div>
+
+
+        <!-- ユーザー情報 -->
+
+        <div
+            id="profile-info"
+            class="profile-info"
+        >
+
+            <p>
+                ユーザー情報を読み込んでいます...
+            </p>
+
+        </div>
+        <div class="profile-edit">
+
+    <h2>
+        表示名を変更
+    </h2>
+
+
+    <input
+        type="text"
+        id="username-input"
+        placeholder="表示名を入力"
+        maxlength="20"
+    >
+
+
+    <button
+        id="username-save-button"
+        type="button"
+    >
+        保存
+    </button>
+
+
+    <p
+        id="username-message"
+    ></p>
+
+</div>
+
+
+        <!-- 自分のスレッド -->
+
+        <section class="profile-section">
+
+            <h2>
+                自分のスレッド
+            </h2>
+
+
+            <div
+                id="my-threads"
+                class="thread-list"
+            ></div>
+
+        </section>
+
+
+        <!-- 自分の返信 -->
+
+        <section class="profile-section">
+
+            <h2>
+                自分の返信
+            </h2>
+
+
+            <div
+                id="my-replies"
+                class="reply-list"
+            ></div>
+
+        </section>
+
+
+    </section>
+
+</main>
+
+
+<!-- ========================================
+     フッター
+======================================== -->
+
+<footer class="footer">
+
+    <p>
+        © 2026 B-CHAT
+    </p>
+
+</footer>
+
+
+<!-- ========================================
+     Supabase
+======================================== -->
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<script src="js/main.js"></script>
+
+<script src="js/profile.js"></script>
+
+
+</body>
+
+</html>
+```

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>B-CHAT - スレッド</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ヘッダー -->
+    <header class="header">
+
+        <div class="logo">
+            B-CHAT
+        </div>
+
+        <nav class="nav">
+            <a href="index.html">ホーム</a>
+            <a href="threads.html">スレッド</a>
+            <a href="search.html">検索</a>
+            <a href="login.html">ログイン</a>
+            <a href="profile.html">プロフィール</a>
+        </nav>
+
+    </header>
+
+
+    <!-- メイン -->
+    <main>
+
+        <section class="section">
+
+            <!-- ページタイトル -->
+            <div class="page-title">
+
+                <div class="page-title">
+
+                <p
+                    class="breadcrumb"
+                    id="breadcrumb"
+                >
+                    B-CHAT / ジャンル
+                </p>
+
+                <h1 id="category-title">
+                    すべてのスレッド
+                </h1>
+
+                <p id="category-description">
+                    ボウリングに関するスレッド
+                </p>
+
+</div>
+
+            </div>
+
+
+            <!-- 検索・投稿 -->
+            <div class="thread-actions">
+
+                <div class="thread-search">
+
+                    <input
+                        type="text"
+                        id="thread-search-input"
+                        placeholder="キーワードで検索"
+                    >
+
+                    <button id="thread-search-button">
+                        検索
+                    </button>
+
+                </div>
+
+                <a href="create-thread.html" class="new-thread-button">
+                    ＋ スレッドを作成
+                </a>
+
+            </div>
+
+
+            <!-- 並び替え -->
+            <div class="thread-toolbar">
+
+                <span>
+                    ボールのスレッド
+                </span>
+
+                <select id="thread-sort">
+                    <option value="new">新着順</option>
+                    <option value="replies">返信数順</option>
+                    <option value="updated">更新順</option>
+                </select>
+
+            </div>
+
+
+            <!-- スレッド一覧 -->
+            <div
+                id="thread-search-result"
+             class="thread-search-result"
+></div>
+
+
+<div
+    id="thread-list"
+    class="thread-list"
+></div>
+
+        </section>
+
+    </main>
+
+
+    <!-- フッター -->
+    <footer class="footer">
+
+        <p>© 2026 B-CHAT</p>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/main.js"></script>
+    <script src="js/threads.js"></script>
+
+</body>
+
+</html>
