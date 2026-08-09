@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>B-CHAT - ログイン</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+<header class="header">
+
+    <div class="logo">
+        B-CHAT<a href="index.html"></a>
+    </div>
+
+
+    <nav class="nav">
+
+        <a href="index.html">
+            ホーム
+        </a>
+
+        <a href="threads.html">
+            スレッド
+        </a>
+
+        <a href="search.html">
+            検索
+        </a>
+
+        <a href="profile.html">
+            プロフィール
+        </a>
+
+    </nav>
+
+</header>
+
+
+
+<main>
+
+    <section class="auth-section">
+
+        <div class="auth-box">
+
+            <h1>
+                ログイン
+            </h1>
+
+
+            <form id="login-form">
+
+
+                <div class="form-group">
+
+                    <label for="email">
+                        メールアドレス
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="password">
+                        パスワード
+                    </label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        required
+                    >
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="auth-button"
+                >
+                    ログイン
+                </button>
+
+
+            </form>
+
+
+            <p id="login-message"></p>
+
+
+            <div class="auth-links">
+
+                <a href="signup.html">
+                    アカウントを作成する
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+</main>
+
+
+
+<footer class="footer">
+
+    <p>
+        © 2026 B-CHAT
+    </p>
+
+</footer>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<script src="js/main.js"></script>
+
+<script src="js/login.js"></script>
+
+
+</body>
+
+</html>
